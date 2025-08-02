@@ -1,5 +1,5 @@
 const testRoutes = require('./routes/myTestRoutes');
-const calculatorRoutes = require('/routes/calculatorRoutes');
+const calculatorRoutes = require('./routes/calculatorRoutes');
 const express = require("express");
 const app = express();
 const port = 3000;
