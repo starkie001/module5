@@ -1,14 +1,12 @@
+const testRoutes = require('./routes/myTestRoutes');
+const calculatorRoutes = require('/routes/calculatorRoutes');
 const express = require("express");
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
+app.use('/mytest', testRoutes);
 
-app.get("/test", (req, res) => {
-    res.send("This is a test");
-});
+app.use('/calculator', calculatorRoutes);
 
 app.listen(port, () => {
     console.log(`Example app listen at http://localhost:${port}`);
